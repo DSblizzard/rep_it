@@ -120,7 +120,6 @@ def hook():
 	pythoncom.PumpMessages()
 
 def shs_to_events(Shs):
-	print("Shs:", Shs)
 	Events = []
 	for Sh in Shs:
 		Key = ""
@@ -134,7 +133,6 @@ def shs_to_events(Shs):
 			Sh = substr_from(Sh, PlusPos + 1)
 		Event = [Key, Mods]
 		append(Events, Event)
-	print("Events:", Events)
 	return Events
 
 def new_macro1(Name, Count, Shortcut, Events): # , DisplayKeys
@@ -216,7 +214,6 @@ def rmods_up(Mods):
 
 def press_key(Key, Mods = []):
 	global G
-	print("Key, Mods:", Key, Mods)
 	SortedMods = sorted_mods(Mods)
 	RevSortedMods = reversed(SortedMods)
 	for Mod in SortedMods:
@@ -272,15 +269,10 @@ def check_meta_commands():
 		elif G.CurKey == "f3":
 			if G.Mode == "record2":
 				sHotKeys = unparse_keys(G.HotKeys)
-				print("G.HotKeys:", G.HotKeys)
 				EventsKeys = G.PressedKeys[:]
-				print("EventsKeys:", EventsKeys)
 				sEvents = unparse_keys(EventsKeys)
-				print("sEvents:", sEvents)
 				Name = ""
 				Count = 1
-				print("shs_to_events(G.HotKeys):", shs_to_events(G.HotKeys))
-				print("shs_to_events(EventsKeys):", shs_to_events(EventsKeys))
 				new_macro(Name, Count, shs_to_events(G.HotKeys), shs_to_events(EventsKeys)) # , G.DisplayKeys
 				G.MacrosS += "\n<Name>\n<Shortcut>" + sHotKeys + "\n<Events>" + sEvents + "\n"
 				write_file("macros.txt", G.MacrosS)
@@ -562,7 +554,6 @@ def parse_RawOff_str(S):
 		else:
 			Key = handle_letter(Key, Mods)
 		append(KeysWithMods, [Key, Mods])
-	print("KeysWithMods:", KeysWithMods)
 	return KeysWithMods
 
 def parse_RawOn_str(S):
