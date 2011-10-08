@@ -1,0 +1,108 @@
+<Name>double quotes
+<Shortcut>alt+2
+<Events>sl en " " left rl
+
+<Name>parens
+<Shortcut>alt+9
+<Events>( ) left
+
+<Name>SqBrs
+<Shortcut>alt+[
+<Events>sl en [ ] left rl
+
+<Name>braces
+<Shortcut>alt+]
+<Events>sl en { } left rl
+
+<Name>" char
+<Shortcut>alt+'
+<Events>alt+shift " alt+shift
+
+<Name>| char
+<Shortcut>alt+\
+<Events>alt+shift | alt+shift
+
+<Name>< char
+<Shortcut>alt+,
+<Events>alt+shift < alt+shift
+
+<Name>cut file
+<Shortcut>ctrl+del
+<Events>apps up up up up up up enter
+
+<Name>zoom in opera
+<Shortcut>ctrl+enter
+<Events>add add add add
+
+<Name>minimize window
+<Shortcut>alt+f8
+<Events>alt+space down down down enter
+
+<Name>comment (Python)
+<Shortcut>ctrl+alt+k
+<Events>alt+m # enter
+
+<Name>for (Python)
+<Shortcut>ctrl+alt+f
+<Events><r+>for i in range():<r-> enter tab
+
+<Name>print (Python)
+<Shortcut>ctrl+alt+p
+<Events><r+>print("<r->ctrl+v : " , space ctrl+v )
+
+<Name>print2 (Python)
+<Shortcut>ctrl+shift+p
+<Events><r+>print("<r->ctrl+v " )
+
+<Name>Py 2.6
+<Shortcut>ctrl+2
+<Events>f4<r+>d:\program files\python26\python.exe<r->enter
+
+<Name>Py 3.1
+<Shortcut>ctrl+3
+<Events>f4<r+>d:\program files\python31\python.exe<r->enter
+
+<Name>cmd
+<Shortcut>ctrl+alt+c
+<Events>f4<r+>c:\windows\system32\cmd.exe<r->enter
+
+<Name>insert to console
+<Shortcut>alt+v
+<Events>alt+space up up up right down down enter
+
+<Name>thumbnails
+<Shortcut>alt+x
+<Events>f10 right right down down down down enter
+
+<Name>Py 2.6 install
+<Shortcut>ctrl+shift+i
+<Events><r+>@"D:\Program Files\Python26\python.exe" setup.py install
+
+<Name>from notepad2 to python
+<Shortcut>alt+e
+<Events>alt+c ctrl+r sleep 0.2 back <r+>d:\progra~1\python31\python.exe <r-> enter sleep 0.2 alt+space up up up right down down enter
+
+<Name>cl
+<Shortcut>caps
+<Events>alt+shift
+
+<Name>
+<Shortcut>scroll
+<Events>caps
+
+
+<Name>print3
+<Shortcut>p r tab
+<Events>back<r+>int()
+
+<Name>print3
+<Shortcut>r e t tab
+<Events>back u r n space
+
+<Name>DSblizzard
+<Shortcut><r+>DSb
+<Events><r+>lizzard
+
+<Name>
+<Shortcut>C , o
+<Events>back back j j , o b n m ( shift+alt " shift+ins : space " space + space shift+ins ) ; shift+alt
