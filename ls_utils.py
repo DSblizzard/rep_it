@@ -15,9 +15,12 @@ IsPy2 = (python_version()[0] == "2")
 IsPy3 = (python_version()[0] == "3")
 RusAlphabetLower = "абвгдеёжзийклмнопрстуфхцчшщъыьэюя"
 RusAlphabetUpper = "АБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯ"
-if IsPy2:
-	RusAlphabetLower = RusAlphabetLower.decode("utf-8")
-	RusAlphabetUpper = RusAlphabetUpper.decode("utf-8")
+try:
+	if IsPy2:
+		RusAlphabetLower = RusAlphabetLower.decode("utf-8")
+		RusAlphabetUpper = RusAlphabetUpper.decode("utf-8")
+except:
+	pass
 
 write = sys.stdout.write
 cp = deepcopy #
