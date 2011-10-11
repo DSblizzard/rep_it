@@ -48,7 +48,7 @@ RevShiftDict = {}
 for Key in ShiftDict:
 	RevShiftDict[ShiftDict[Key]] = Key
 
-RusAlphabetInEnLayout = "F,DULE`;PBQRKVYJGHCNEA[WXIO]SM'.Z"
+RusAlphabetInEnLayout = "F,DULT`;PBQRKVYJGHCNEA[WXIO]SM'.Z"
 RusEnLayoutDict = {}
 for i in nums(RusAlphabetUpper):
 	RusEnLayoutDict[RusAlphabetUpper[i]] = RusAlphabetInEnLayout[i]
